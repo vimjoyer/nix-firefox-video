@@ -46,13 +46,13 @@
         /* some css */                        
       '';                                      
 
-      extensions = [
-        inputs.firefox-addons.packages."x86_64-linux".bitwarden
-        inputs.firefox-addons.packages."x86_64-linux".block-origin
-        inputs.firefox-addons.packages."x86_64-linux".ponsorblock
-        inputs.firefox-addons.packages."x86_64-linux".arkreader
-        inputs.firefox-addons.packages."x86_64-linux".ridactyl
-        inputs.firefox-addons.packages."x86_64-linux".outube-shorts-block
+      extensions = with inputs.firefox-addons.packages."x86_64-linux"; [
+        bitwarden
+        block-origin
+        ponsorblock
+        arkreader
+        ridactyl
+        outube-shorts-block
       ];
 
     };
