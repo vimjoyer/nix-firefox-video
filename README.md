@@ -49,7 +49,7 @@
       extensions = with inputs.firefox-addons.packages."x86_64-linux"; [
         bitwarden
         block-origin
-        ponsorblock
+        sponsorblock
         arkreader
         ridactyl
         outube-shorts-block
